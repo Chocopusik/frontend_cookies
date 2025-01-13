@@ -8,7 +8,7 @@
 <body>
 
 <main class="main">
-
+<div class="currency" title="Изменить валюту" id="change-currency">$</div>
     <header class="header">
         <div class="container">
             <div class="logo">
@@ -17,13 +17,13 @@
             <nav class="menu">
                 <ul class="menu-list">
                     <li class="menu-item">
-                        <a href="#">Каталог</a>
+                        <a data-link="products">Каталог</a>
                     </li>
                     <li class="menu-item">
-                        <a href="#">О нас</a>
+                        <a data-link="love">О нас</a>
                     </li>
                     <li class="menu-item">
-                        <a href="#">Оформление заказа</a>
+                        <a data-link="order">Оформление заказа</a>
                     </li>
                 </ul>
             </nav>
@@ -41,14 +41,14 @@
                     подарить вам истинное кулинарное наслаждение.
                 </p>
                 <div class="main-action">
-                    <button class="button">Заказать</button>
+                    <button class="button" id="main-action-button">Заказать</button>
                 </div>
             </div>
             <img src="images/cookie.png" alt="Cookie" class="main-image">
         </div>
     </section>
 
-    <section class="products">
+    <section class="products" id="products">
         <div class="container">
             <img src="images/line2.png" alt="line" class="line2">
             <div class="common-title">Выберите печенье</div>
@@ -65,7 +65,7 @@
                         </div>
                         <div class="products-item-extra">
                             <div class="products-item-info">
-                                <div class="products-item-pricing">20 $</div>
+                                <div class="products-item-pricing" data-item-price="20">20 $</div>
                                 <div class="products-item-weight">2 шт./ 200 гр.</div>
                             </div>
                             <button class="button purple-butt">Заказать</button>
@@ -85,7 +85,7 @@
                         </div>
                         <div class="products-item-extra">
                             <div class="products-item-info">
-                                <div class="products-item-pricing">24 $</div>
+                                <div class="products-item-pricing" data-item-price="24">24 $</div>
                                 <div class="products-item-weight">2 шт./ 200 гр.</div>
                             </div>
                             <button class="button purple-butt">Заказать</button>
@@ -104,7 +104,7 @@
                         </div>
                         <div class="products-item-extra">
                             <div class="products-item-info">
-                                <div class="products-item-pricing">18 $</div>
+                                <div class="products-item-pricing" data-item-price="18">18 $</div>
                                 <div class="products-item-weight">2 шт./ 200 гр.</div>
                             </div>
                             <button class="button purple-butt">Заказать</button>
@@ -125,7 +125,7 @@
                         </div>
                         <div class="products-item-extra">
                             <div class="products-item-info">
-                                <div class="products-item-pricing">24 $</div>
+                                <div class="products-item-pricing" data-item-price="24">24 $</div>
                                 <div class="products-item-weight">2 шт./ 200 гр.</div>
                             </div>
                             <button class="button purple-butt">Заказать</button>
@@ -145,7 +145,7 @@
                         </div>
                         <div class="products-item-extra">
                             <div class="products-item-info">
-                                <div class="products-item-pricing">20 $</div>
+                                <div class="products-item-pricing" data-item-price="20">20 $</div>
                                 <div class="products-item-weight">2 шт./ 200 гр.</div>
                             </div>
                             <button class="button purple-butt">Заказать</button>
@@ -167,7 +167,7 @@
                         </div>
                         <div class="products-item-extra">
                             <div class="products-item-info">
-                                <div class="products-item-pricing">18 $</div>
+                                <div class="products-item-pricing" data-item-price="18">18 $</div>
                                 <div class="products-item-weight">2 шт./ 200 гр.</div>
                             </div>
                             <button class="button purple-butt">Заказать</button>
@@ -187,7 +187,7 @@
                         </div>
                         <div class="products-item-extra">
                             <div class="products-item-info">
-                                <div class="products-item-pricing">36 $</div>
+                                <div class="products-item-pricing" data-item-price="36">36 $</div>
                                 <div class="products-item-weight">4 шт./ 400 гр.</div>
                             </div>
                             <button class="button purple-butt">Заказать</button>
@@ -207,7 +207,7 @@
                         </div>
                         <div class="products-item-extra">
                             <div class="products-item-info">
-                                <div class="products-item-pricing">33 $</div>
+                                <div class="products-item-pricing" data-item-price="33">33 $</div>
                                 <div class="products-item-weight">4 шт./ 400 гр.</div>
                             </div>
                             <button class="button purple-butt">Заказать</button>
@@ -226,7 +226,7 @@
                         </div>
                         <div class="products-item-extra">
                             <div class="products-item-info">
-                                <div class="products-item-pricing">38 $</div>
+                                <div class="products-item-pricing" data-item-price="38">38 $</div>
                                 <div class="products-item-weight">4 шт./ 400 гр.</div>
                             </div>
                             <button class="button purple-butt">Заказать</button>
@@ -245,7 +245,7 @@
                         </div>
                         <div class="products-item-extra">
                             <div class="products-item-info">
-                                <div class="products-item-pricing">33 $</div>
+                                <div class="products-item-pricing" data-item-price="33">33 $</div>
                                 <div class="products-item-weight">4 шт./ 400 гр.</div>
                             </div>
                             <button class="button purple-butt">Заказать</button>
@@ -264,7 +264,7 @@
                         </div>
                         <div class="products-item-extra">
                             <div class="products-item-info">
-                                <div class="products-item-pricing">39 $</div>
+                                <div class="products-item-pricing" data-item-price="39">39 $</div>
                                 <div class="products-item-weight">4 шт./ 400 гр.</div>
                             </div>
                             <button class="button purple-butt">Заказать</button>
@@ -284,7 +284,7 @@
                         </div>
                         <div class="products-item-extra">
                             <div class="products-item-info">
-                                <div class="products-item-pricing">35 $</div>
+                                <div class="products-item-pricing" data-item-price="35">35 $</div>
                                 <div class="products-item-weight">4 шт./ 400 гр.</div>
                             </div>
                             <button class="button purple-butt">Заказать</button>
@@ -295,7 +295,7 @@
         </div>
     </section>
 
-    <section class="love">
+    <section class="love" id="love">
         <div class="container">
             <div class="common-title">Пекарня с любовью</div>
             <div class="love-items">
@@ -314,7 +314,7 @@
         </div>
     </section>
 
-    <section class="order">
+    <section class="order" id="order">
         <img src="images/line3.png" alt="line" class="line3">
         <div class="container">
             <div class="common-title">Закажите печенье</div>
@@ -326,10 +326,10 @@
                         прямо сейчас и окунитесь в мир сладких наслаждений.
                     </div>
                     <div class="order-form-inputs">
-                        <input type="text" placeholder="Выберите печенье">
-                        <input type="text" placeholder="Ваше имя">
-                        <input type="text" placeholder="Ваш телефон">
-                        <button class="button purple-butt">Оформить заказ</button>
+                        <input type="text" placeholder="Выберите печенье" id="product">
+                        <input type="text" placeholder="Ваше имя" id="name">
+                        <input type="text" placeholder="Ваш телефон" id="phone">
+                        <button class="button purple-butt" id="order-action">Оформить заказ</button>
                     </div>
                 </div>
                 <div class="order-block-image">
@@ -348,5 +348,7 @@
 
 </main>
 
+
+<script src="scripts/script.js" \></script>
 </body>
 </html>
